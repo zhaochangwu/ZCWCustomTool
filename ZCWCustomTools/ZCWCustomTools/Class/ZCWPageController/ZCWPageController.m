@@ -43,6 +43,7 @@
                 footerRefreshBlock([strongSelf.pageModel copy], [strongSelf hasMoreDara]);
             }
         }];
+        self.tableView.mj_footer.hidden = YES;
     }
     return self;
 }
@@ -93,6 +94,7 @@
 }
 
 - (void)endRefreshing {
+    self.tableView.mj_footer.hidden = self.allListCount == 0;
     [self.tableView.mj_header endRefreshing];
     [self.tableView.mj_footer endRefreshing];
 }
