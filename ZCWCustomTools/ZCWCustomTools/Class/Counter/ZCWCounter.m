@@ -90,6 +90,9 @@
 }
 
 - (void)endTimer {
+    if (!self.timer) {
+        return;
+    }
     [self.timer invalidate];
     self.timer = nil;
     if (self.didStopCount) {
