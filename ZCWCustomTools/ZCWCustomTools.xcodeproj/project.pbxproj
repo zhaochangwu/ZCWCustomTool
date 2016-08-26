@@ -18,7 +18,6 @@
 		2C4769F81D5ECF7E00859063 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4769E21D5ECF7E00859063 /* UIView+Extension.m */; };
 		2C4769F91D5ECF7E00859063 /* ZCWKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4769E51D5ECF7E00859063 /* ZCWKeyboardController.m */; };
 		2C4769FA1D5ECF7E00859063 /* ZCWRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4769EA1D5ECF7E00859063 /* ZCWRequestManager.m */; };
-		2C4769FB1D5ECF7E00859063 /* ZCWPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4769ED1D5ECF7E00859063 /* ZCWPageController.m */; };
 		2C4769FC1D5ECF7E00859063 /* ZCWPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4769EF1D5ECF7E00859063 /* ZCWPageModel.m */; };
 		2CAE96B61D5C340300E0F33D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAE96B51D5C340300E0F33D /* main.m */; };
 		2CAE96B91D5C340300E0F33D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAE96B81D5C340300E0F33D /* AppDelegate.m */; };
@@ -29,6 +28,7 @@
 		2CAE96CF1D5C340300E0F33D /* ZCWCustomToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAE96CE1D5C340300E0F33D /* ZCWCustomToolsTests.m */; };
 		2CAE96DA1D5C340300E0F33D /* ZCWCustomToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAE96D91D5C340300E0F33D /* ZCWCustomToolsUITests.m */; };
 		2CFFE9FB1D6FD77500C1EE7D /* ZCWCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFFE9FA1D6FD77500C1EE7D /* ZCWCounter.m */; };
+		2CFFE9FE1D6FD8DB00C1EE7D /* ZCWPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFFE9FD1D6FD8DB00C1EE7D /* ZCWPageManager.m */; };
 		E321BF10042EA2B8BE2AB3FB /* libPods-ZCWCustomTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADC326DFE28719B3DFE88CB /* libPods-ZCWCustomTools.a */; };
 /* End PBXBuildFile section */
 
@@ -74,8 +74,6 @@
 		2C4769E51D5ECF7E00859063 /* ZCWKeyboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCWKeyboardController.m; sourceTree = "<group>"; };
 		2C4769E91D5ECF7E00859063 /* ZCWRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCWRequestManager.h; sourceTree = "<group>"; };
 		2C4769EA1D5ECF7E00859063 /* ZCWRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCWRequestManager.m; sourceTree = "<group>"; };
-		2C4769EC1D5ECF7E00859063 /* ZCWPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCWPageController.h; sourceTree = "<group>"; };
-		2C4769ED1D5ECF7E00859063 /* ZCWPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCWPageController.m; sourceTree = "<group>"; };
 		2C4769EE1D5ECF7E00859063 /* ZCWPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCWPageModel.h; sourceTree = "<group>"; };
 		2C4769EF1D5ECF7E00859063 /* ZCWPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCWPageModel.m; sourceTree = "<group>"; };
 		2C6AC0B31D6BDD320024F9CF /* ZCWDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCWDefine.h; sourceTree = "<group>"; };
@@ -97,6 +95,8 @@
 		2CAE96DB1D5C340300E0F33D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CFFE9F91D6FD77500C1EE7D /* ZCWCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCWCounter.h; sourceTree = "<group>"; };
 		2CFFE9FA1D6FD77500C1EE7D /* ZCWCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCWCounter.m; sourceTree = "<group>"; };
+		2CFFE9FC1D6FD8DB00C1EE7D /* ZCWPageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCWPageManager.h; sourceTree = "<group>"; };
+		2CFFE9FD1D6FD8DB00C1EE7D /* ZCWPageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCWPageManager.m; sourceTree = "<group>"; };
 		5B966BB41399B1D45EB455CC /* Pods-ZCWCustomTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCWCustomTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCWCustomTools/Pods-ZCWCustomTools.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,7 +133,7 @@
 				2C4769D01D5ECF7E00859063 /* Category */,
 				2C4769E31D5ECF7E00859063 /* ZCWKeyboardController */,
 				2C4769E61D5ECF7E00859063 /* ZCWNetwork */,
-				2C4769EB1D5ECF7E00859063 /* ZCWPageController */,
+				2C4769EB1D5ECF7E00859063 /* ZCWPageManager */,
 				2C6AC0B31D6BDD320024F9CF /* ZCWDefine.h */,
 			);
 			path = Class;
@@ -190,14 +190,15 @@
 			path = ZCWModelJson;
 			sourceTree = "<group>";
 		};
-		2C4769EB1D5ECF7E00859063 /* ZCWPageController */ = {
+		2C4769EB1D5ECF7E00859063 /* ZCWPageManager */ = {
 			isa = PBXGroup;
 			children = (
-				2C4769EC1D5ECF7E00859063 /* ZCWPageController.h */,
-				2C4769ED1D5ECF7E00859063 /* ZCWPageController.m */,
+				2CFFE9FC1D6FD8DB00C1EE7D /* ZCWPageManager.h */,
+				2CFFE9FD1D6FD8DB00C1EE7D /* ZCWPageManager.m */,
 				2C4769EE1D5ECF7E00859063 /* ZCWPageModel.h */,
 				2C4769EF1D5ECF7E00859063 /* ZCWPageModel.m */,
 			);
+			name = ZCWPageManager;
 			path = ZCWPageController;
 			sourceTree = "<group>";
 		};
@@ -487,10 +488,10 @@
 				2C4769F71D5ECF7E00859063 /* UIImageView+Extension.m in Sources */,
 				2C4769F91D5ECF7E00859063 /* ZCWKeyboardController.m in Sources */,
 				2CAE96B91D5C340300E0F33D /* AppDelegate.m in Sources */,
+				2CFFE9FE1D6FD8DB00C1EE7D /* ZCWPageManager.m in Sources */,
 				2CAE96B61D5C340300E0F33D /* main.m in Sources */,
 				2C4769F21D5ECF7E00859063 /* NSObject+Nib.m in Sources */,
 				2CFFE9FB1D6FD77500C1EE7D /* ZCWCounter.m in Sources */,
-				2C4769FB1D5ECF7E00859063 /* ZCWPageController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

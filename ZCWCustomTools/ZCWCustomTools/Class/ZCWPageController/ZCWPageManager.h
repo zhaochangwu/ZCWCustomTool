@@ -16,7 +16,7 @@ typedef void(^ZCWRefreshBlock)(ZCWPageModel *model, BOOL dataStatus);
  *  将分页的控制逻辑, 和数据进行封装
  */
 
-@interface ZCWPageController : NSObject
+@interface ZCWPageManager : NSObject
 
 /**
  *  默认是没有totalRecords 和totalpage的

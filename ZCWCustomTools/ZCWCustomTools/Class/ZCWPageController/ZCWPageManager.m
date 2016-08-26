@@ -1,23 +1,23 @@
 //
-//  ZCWPageContrller.m
+//  ZCWPageManager.m
 //  ZCWCustomTools
 //
 //  Created by zhaochangwu on 16/8/10.
 //  Copyright © 2016年 zhaochangwu. All rights reserved.
 //
 
-#import "ZCWPageController.h"
+#import "ZCWPageManager.h"
 #import "ZCWPageModel.h"
 #import "MJRefresh.h"
 
-@interface ZCWPageController ()
+@interface ZCWPageManager ()
 
 @property (nonatomic, weak) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *allList;
 
 @end
 
-@implementation ZCWPageController
+@implementation ZCWPageManager
 
 - (instancetype)initWithTableView:(UITableView *)tableView
                headerRefreshBlock:(ZCWRefreshBlock)headerRefreshBlock
