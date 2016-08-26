@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ZCWCounter.h"
 
 @interface ZCWCustomToolsTests : XCTestCase
 
@@ -34,6 +35,22 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+- (void)testCounter {
+    NSInteger number = 60;
+    ZCWCounter *counter = [ZCWCounter countDownWithStartNumber:number];
+    NSInteger delay = 4;
+    [counter startCount];
+    dispatch_time_t when = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC));
+    // 经过多少纳秒，由主队列调度任务异步执行
+    XCTestExpectation *expectation = [self expectationWithDescription:@"Handler called"];
+    dispatch_after(when, dispatch_get_main_queue(), ^ {
+        // 延迟操作执行的代码
+        [expectation fulfill];
+        XCTAssertEqual(counter.currentNumber, number - delay);
+    });
+    [self waitForExpectationsWithTimeout:number handler:nil];
 }
 
 @end

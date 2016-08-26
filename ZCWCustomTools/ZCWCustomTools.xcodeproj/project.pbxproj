@@ -28,6 +28,7 @@
 		2CAE96C41D5C340300E0F33D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CAE96C21D5C340300E0F33D /* LaunchScreen.storyboard */; };
 		2CAE96CF1D5C340300E0F33D /* ZCWCustomToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAE96CE1D5C340300E0F33D /* ZCWCustomToolsTests.m */; };
 		2CAE96DA1D5C340300E0F33D /* ZCWCustomToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAE96D91D5C340300E0F33D /* ZCWCustomToolsUITests.m */; };
+		2CFFE9FB1D6FD77500C1EE7D /* ZCWCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFFE9FA1D6FD77500C1EE7D /* ZCWCounter.m */; };
 		E321BF10042EA2B8BE2AB3FB /* libPods-ZCWCustomTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADC326DFE28719B3DFE88CB /* libPods-ZCWCustomTools.a */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,8 @@
 		2CAE96D51D5C340300E0F33D /* ZCWCustomToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCWCustomToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CAE96D91D5C340300E0F33D /* ZCWCustomToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCWCustomToolsUITests.m; sourceTree = "<group>"; };
 		2CAE96DB1D5C340300E0F33D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CFFE9F91D6FD77500C1EE7D /* ZCWCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCWCounter.h; sourceTree = "<group>"; };
+		2CFFE9FA1D6FD77500C1EE7D /* ZCWCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCWCounter.m; sourceTree = "<group>"; };
 		5B966BB41399B1D45EB455CC /* Pods-ZCWCustomTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCWCustomTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCWCustomTools/Pods-ZCWCustomTools.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +129,7 @@
 		2C4769A11D5ECE0300859063 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				2CFFE9F81D6FD77500C1EE7D /* Counter */,
 				2C4769D01D5ECF7E00859063 /* Category */,
 				2C4769E31D5ECF7E00859063 /* ZCWKeyboardController */,
 				2C4769E61D5ECF7E00859063 /* ZCWNetwork */,
@@ -260,6 +264,15 @@
 				2CAE96DB1D5C340300E0F33D /* Info.plist */,
 			);
 			path = ZCWCustomToolsUITests;
+			sourceTree = "<group>";
+		};
+		2CFFE9F81D6FD77500C1EE7D /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				2CFFE9F91D6FD77500C1EE7D /* ZCWCounter.h */,
+				2CFFE9FA1D6FD77500C1EE7D /* ZCWCounter.m */,
+			);
+			path = Counter;
 			sourceTree = "<group>";
 		};
 		39396D156D1AB2F5893FA749 /* Pods */ = {
@@ -476,6 +489,7 @@
 				2CAE96B91D5C340300E0F33D /* AppDelegate.m in Sources */,
 				2CAE96B61D5C340300E0F33D /* main.m in Sources */,
 				2C4769F21D5ECF7E00859063 /* NSObject+Nib.m in Sources */,
+				2CFFE9FB1D6FD77500C1EE7D /* ZCWCounter.m in Sources */,
 				2C4769FB1D5ECF7E00859063 /* ZCWPageController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,6 +635,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZCWCustomTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaochangwu.ZCWCustomTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -633,6 +648,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZCWCustomTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaochangwu.ZCWCustomTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
